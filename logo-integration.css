@@ -1,1 +1,59 @@
-.brand{gap:0}.brand .brand-mark,.brand>span:last-child{display:none}.site-header{height:116px}.brand::before{content:"";display:block;width:340px;height:100px;background-image:url('3BD5CC5A-52FC-4A5C-8366-2A16BB28DF32.png');background-repeat:no-repeat;background-size:contain;background-position:center}.footer-brand::before{width:360px;height:115px}.footer-brand{min-height:115px}@media(max-width:900px){.site-header{height:102px}.nav{top:102px}.site-header .brand::before{width:280px;height:88px}}@media(max-width:600px){.site-header{height:100px;padding-left:5vw}.nav{top:100px}.site-header .brand::before{width:235px;height:84px;background-size:contain}.footer-brand::before{width:270px;height:95px}.footer-brand{min-height:95px}}
+.brand{
+  flex:0 1 auto;
+  min-width:0;
+}
+
+.site-header{
+  height:214px;
+}
+
+.brand-logo{
+  display:block;
+  width:auto;
+  height:auto;
+  max-width:320px;
+  object-fit:contain;
+}
+
+.footer-brand{
+  display:inline-flex;
+  align-self:flex-start;
+}
+
+.footer-brand .brand-logo{
+  max-width:300px;
+}
+
+@media(max-width:900px){
+  .site-header{
+    height:187px;
+  }
+
+  .nav{
+    top:187px;
+  }
+
+  .site-header .brand-logo{
+    max-width:280px;
+  }
+}
+
+@media(max-width:600px){
+  .site-header{
+    height:160px;
+    padding-left:5vw;
+    padding-right:5vw;
+  }
+
+  .nav{
+    top:160px;
+  }
+
+  .site-header .brand-logo{
+    max-width:min(240px,calc(100vw - 104px));
+  }
+
+  .footer-brand .brand-logo{
+    max-width:min(300px,88vw);
+  }
+}
