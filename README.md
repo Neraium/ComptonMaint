@@ -28,8 +28,9 @@ reviews, and legal entity suffixes are not asserted without verification.
 ## Brand and images
 
 The supplied PNG logo is unchanged. Header logo widths remain 320px on desktop,
-280px at tablet widths, and 240px (viewport constrained) on phones. Footer width
-remains 300px (viewport constrained). Styles are consolidated in `styles.css`.
+280px at tablet widths, and 240px (viewport constrained) on phones. Footer logo
+width is 160px on desktop and 140px on phones (viewport constrained). Styles are
+consolidated in `styles.css`.
 
 The existing hero stock image is hosted locally at a reduced download size:
 
@@ -49,3 +50,8 @@ JavaScript. Commercial anchor links select their panel before navigating.
 The estimate tool asks for property type, city/neighborhood and work details.
 Preparing a summary replaces the fields with a copy/edit view. Drafts last only
 while the page is open; no server request or persistent storage is used.
+
+Estimate entry points are limited to the header/navigation, hero and one contextual
+invitation after the service and maintenance content. The contextual control uses
+an outline style to keep the hero button dominant. Service panels and the footer
+do not repeat estimate CTAs.

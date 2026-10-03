@@ -360,7 +360,7 @@ em {
 }
 .service-highlights {
   padding-left: 20px;
-  margin: 0 0 24px;
+  margin: 0;
   font-size: 15px;
 }
 .service-highlights li {
@@ -476,7 +476,7 @@ details p {
   gap: 8px 16px;
   border-top: 1px solid var(--line);
   padding-top: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 0;
   font-size: 13px;
   font-weight: 600;
 }
@@ -497,7 +497,7 @@ footer {
   gap: 40px;
 }
 .footer-brand .brand-logo {
-  width: 300px;
+  width: 160px;
 }
 .footer-main > p {
   color: #ccc;
@@ -541,6 +541,42 @@ footer > div:not(.footer-main) {
   min-height: 44px;
 }
 
+.plans > div > p:last-child {
+  margin-bottom: 0;
+}
+.estimate-invitation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px var(--gutter);
+  border-bottom: 1px solid var(--line);
+}
+.estimate-invitation p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.secondary {
+  border: 1px solid #111;
+  background: #fff;
+  color: #111;
+  flex-shrink: 0;
+}
+.secondary:hover {
+  background: var(--soft);
+}
+@media (max-width: 600px) {
+  .estimate-invitation {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 24px var(--gutter);
+  }
+  .estimate-invitation p {
+    font-size: 15px;
+  }
+}
 /* Native modal provides dialog semantics and makes the page inert. */
 .estimate-dialog {
   width: min(560px, calc(100% - 40px));
@@ -681,18 +717,6 @@ body.dialog-open {
 }
 button[data-estimate]:disabled {
   cursor: default;
-}
-.footer-links button[data-estimate] {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0;
-  background: transparent;
-  border: 0;
-  color: inherit;
-  font: inherit;
-  text-align: left;
-  cursor: pointer;
 }
 .nav button[data-estimate] {
   font-size: 14px;
@@ -858,20 +882,24 @@ button[data-estimate]:disabled {
   .section-head > p {
     font-size: 15px;
   }
+  .tab-break {
+    display: block;
+  }
   .audience-tabs {
     width: 100%;
     margin-bottom: 16px;
   }
   .audience-tabs button {
     flex: 1;
-    padding: 10px 4px;
-    font-size: 12px;
+    min-height: 56px;
+    padding: 8px 4px;
+    font-size: 13px;
     line-height: 1.4;
     min-width: 0;
   }
   .audience-panel {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 16px;
     padding: 20px;
   }
   .audience-copy h3 {
@@ -881,7 +909,7 @@ button[data-estimate]:disabled {
     font-size: 15px;
   }
   .service-highlights {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-size: 14px;
   }
   summary {
@@ -896,7 +924,7 @@ button[data-estimate]:disabled {
   }
   .values {
     gap: 8px 12px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-size: 12px;
   }
   footer {
@@ -912,7 +940,7 @@ button[data-estimate]:disabled {
     display: none;
   }
   .footer-brand .brand-logo {
-    width: min(300px, 88vw);
+    width: min(140px, 88vw);
   }
   footer > div:not(.footer-main) {
     font-size: 13px;

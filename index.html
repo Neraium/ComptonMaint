@@ -127,7 +127,7 @@
             data-panel="property-management"
             disabled
           >
-            Property Management
+            <span>Property<span class="tab-break"> </span>Management</span>
           </button>
         </div>
         <div
@@ -146,15 +146,6 @@
               <li>Exterior & seasonal care</li>
               <li>Punch lists & recurring visits</li>
             </ul>
-            <button
-              class="btn primary"
-              type="button"
-              data-estimate
-              disabled
-              data-property="Residential"
-            >
-              Get a free estimate <span aria-hidden="true">→</span>
-            </button>
           </div>
           <div class="service-details">
             <details>
@@ -199,15 +190,6 @@
               <li>Exterior property upkeep</li>
               <li>Scheduled recurring maintenance</li>
             </ul>
-            <button
-              class="btn primary"
-              type="button"
-              data-estimate
-              disabled
-              data-property="Commercial"
-            >
-              Get a free estimate <span aria-hidden="true">→</span>
-            </button>
           </div>
           <div class="service-details">
             <details>
@@ -242,15 +224,6 @@
               <li>Routine property care</li>
               <li>Written estimates for planned work</li>
             </ul>
-            <button
-              class="btn primary"
-              type="button"
-              data-estimate
-              disabled
-              data-property="Property management"
-            >
-              Get a free estimate <span aria-hidden="true">→</span>
-            </button>
           </div>
           <div class="service-details">
             <details>
@@ -280,15 +253,6 @@
             For homes, businesses and managed properties. Agree on the tasks and
             visit schedule that suit your property.
           </p>
-          <button
-            class="btn primary"
-            type="button"
-            data-estimate
-            disabled
-            data-recurring
-          >
-            Get a free estimate <span aria-hidden="true">→</span>
-          </button>
         </div>
         <div class="plan-detail">
           <p class="plan-lead">
@@ -308,6 +272,12 @@
           </details>
         </div>
       </section>
+      <div class="estimate-invitation" aria-label="Project estimate">
+        <p>A repair list or regular upkeep?</p>
+        <button class="btn secondary" type="button" data-estimate disabled>
+          Get a free estimate <span aria-hidden="true">→</span>
+        </button>
+      </div>
       <section class="about section" id="about">
         <div>
           <p class="eyebrow">Family owned. Gold Canyon based.</p>
@@ -324,9 +294,6 @@
             <span>Written estimates</span><span>Clear communication</span
             ><span>Local service</span>
           </div>
-          <button class="btn primary" type="button" data-estimate disabled>
-            Get a free estimate <span aria-hidden="true">→</span>
-          </button>
         </div>
       </section>
     </main>
@@ -354,10 +321,7 @@
       <div class="footer-links">
         <span class="footer-label">Explore</span><a href="#services">Services</a
         ><a href="#plans">Maintenance Plans</a
-        ><a href="#commercial">Commercial</a
-        ><button type="button" data-estimate disabled>
-          Get a free estimate
-        </button>
+        ><a href="#commercial">Commercial</a>
       </div>
       <p class="copyright">
         <span>© <span id="year">2026</span> Compton Family Maintenance</span>
