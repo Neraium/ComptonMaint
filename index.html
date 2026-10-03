@@ -62,7 +62,9 @@
       <nav class="nav" id="site-navigation" aria-label="Main navigation">
         <a href="#services">Services</a><a href="#plans">Maintenance Plans</a
         ><a href="#commercial">Commercial</a><a href="#about">About</a
-        ><a class="nav-cta" href="#estimate">Get a free estimate</a>
+        ><button class="nav-cta" type="button" data-estimate disabled>
+          Get a free estimate
+        </button>
       </nav>
     </header>
     <main id="main" tabindex="-1">
@@ -75,367 +77,257 @@
           </div>
           <h1>Your property.<br />Our family’s <em>care.</em></h1>
           <p class="hero-copy">
-            One dependable local crew for the repairs, upkeep, installations,
-            and recurring property care that keep your home or business running
-            right.
+            Repairs, upkeep and recurring property care for your home or
+            business in Gold Canyon and the East Valley.
           </p>
           <div class="hero-actions">
-            <a class="btn primary" href="#estimate"
-              >Get a free estimate <span aria-hidden="true">→</span></a
+            <button class="btn primary" type="button" data-estimate disabled>
+              Get a free estimate <span aria-hidden="true">→</span></button
             ><a class="text-link" href="#services"
               >See what we handle <span aria-hidden="true">↓</span></a
             >
           </div>
         </div>
-        <div class="hero-proof">
-          <div>
-            <span aria-hidden="true">01</span><strong>Family owned</strong
-            ><small>Gold Canyon, AZ</small>
-          </div>
-          <div>
-            <span>02</span><strong>Residential + commercial</strong
-            ><small>Homes & managed properties</small>
-          </div>
-          <div>
-            <span>03</span><strong>Clear estimates</strong
-            ><small>Start with your project list</small>
-          </div>
-        </div>
-      </section>
-      <section class="intro section">
-        <div class="intro-title">
-          <p class="eyebrow">A better way to handle the list</p>
-          <h2>One call. One crew.<br /><em>More taken care of.</em></h2>
-        </div>
-        <div class="intro-copy">
-          <p>
-            Owning a property comes with a constant stream of things that need
-            attention. Instead of tracking down someone new for every repair,
-            project, or maintenance visit, call a local team built to handle the
-            list.
-          </p>
-          <p class="quiet">
-            From the small things that have been waiting for months to recurring
-            care that keeps a property in shape.
-          </p>
-          <a class="arrow-link" href="#services"
-            >Explore our services <span aria-hidden="true">↗</span></a
-          >
+        <div class="hero-proof" aria-label="At a glance">
+          <span>Family owned</span><span>Homes & businesses</span
+          ><span>Recurring care</span>
         </div>
       </section>
       <section class="services section" id="services">
         <div class="section-head">
           <div>
-            <p class="eyebrow">What we handle</p>
-            <h2>Built for the work that<br /><em>never stops coming.</em></h2>
+            <p class="eyebrow">One crew. More taken care of.</p>
+            <h2>Maintenance for your kind of property.</h2>
           </div>
           <p>
-            Bring us the single repair or the whole running list. We make
-            property maintenance simpler by giving you one reliable point of
-            contact.
+            Repairs, installations, exterior upkeep and recurring care. Bring us
+            one task or the whole list.
           </p>
         </div>
-        <div class="service-grid">
-          <article class="service-card feature">
-            <div class="service-image image-home">
-              <div class="image-label">Residential</div>
-            </div>
-            <div class="card-body">
-              <span>01 / CORE SERVICE</span>
-              <h3>Home Maintenance & Repairs</h3>
-              <p>
-                General repairs, fixture replacements, installations, touch-ups,
-                punch lists, and everyday work that keeps your home in shape.
-              </p>
-              <a href="#estimate"
-                >Get a free estimate <b aria-hidden="true">↗</b></a
-              >
-            </div>
-          </article>
-          <article class="service-card">
-            <div class="service-top">
-              <span>02</span>
-              <div class="service-icon" aria-hidden="true">⌂</div>
-            </div>
-            <h3>Exterior & Property Care</h3>
-            <p>
-              Exterior upkeep, pressure washing, cleanup, minor repairs, and
-              recurring attention around the property.
-            </p>
-            <a href="#estimate"
-              >Get a free estimate <b aria-hidden="true">↗</b></a
-            >
-          </article>
-          <article class="service-card">
-            <div class="service-top">
-              <span>03</span>
-              <div class="service-icon" aria-hidden="true">◌</div>
-            </div>
-            <h3>Seasonal Maintenance</h3>
-            <p>
-              Scheduled checkups and preventative upkeep designed around the
-              demands of an Arizona property.
-            </p>
-            <a href="#plans"
-              >See maintenance plans <b aria-hidden="true">↗</b></a
-            >
-          </article>
-          <article class="service-card">
-            <div class="service-top">
-              <span>04</span>
-              <div class="service-icon" aria-hidden="true">✓</div>
-            </div>
-            <h3>Punch Lists & Projects</h3>
-            <p>
-              Bundle the loose ends into one visit and finally get the repairs,
-              installs, and lingering projects handled.
-            </p>
-            <a href="#estimate"
-              >Get a free estimate <b aria-hidden="true">↗</b></a
-            >
-          </article>
-          <article class="service-card accent-card">
-            <div class="service-top">
-              <span>05</span>
-              <div class="service-icon" aria-hidden="true">↻</div>
-            </div>
-            <h3>Recurring Property Care</h3>
-            <p>
-              Consistent attention for homeowners, businesses, and managed
-              properties that need a dependable maintenance partner.
-            </p>
-            <a href="#commercial"
-              >For property partners <b aria-hidden="true">↗</b></a
-            >
-          </article>
-        </div>
-        <div class="service-footer">
-          <span>Have something different in mind?</span
-          ><a href="#estimate">Get a free estimate</a>
-        </div>
-      </section>
-      <section class="plans" id="plans">
-        <div class="plans-photo">
-          <div class="photo-caption">
-            <span>Preventative care</span
-            ><strong>Less catching up.<br />More staying ahead.</strong>
-          </div>
-        </div>
-        <div class="plans-content">
-          <p class="eyebrow light">Maintenance plans</p>
-          <h2>Regular upkeep.<br /><em>A manageable list.</em></h2>
-          <p>
-            Tell us about your property and the tasks that come up regularly.
-            We’ll discuss a recurring maintenance plan with a visit schedule and
-            scope suited to your needs.
-          </p>
-          <div class="plan-list">
-            <div>
-              <span>01</span><strong>Discuss your property’s needs</strong>
-            </div>
-            <div>
-              <span>02</span><strong>Set a schedule for routine upkeep</strong>
-            </div>
-            <div>
-              <span>03</span><strong>Agree on the work for each visit</strong>
-            </div>
-            <div>
-              <span>04</span><strong>Review seasonal tasks and repairs</strong>
-            </div>
-          </div>
-          <a class="btn primary" href="#estimate"
-            >Get a free estimate <span aria-hidden="true">→</span></a
+        <div class="audience-tabs" aria-label="Property types">
+          <button
+            type="button"
+            id="tab-residential"
+            data-panel="residential"
+            disabled
           >
+            Residential
+          </button>
+          <button
+            type="button"
+            id="tab-commercial"
+            data-panel="commercial"
+            disabled
+          >
+            Commercial
+          </button>
+          <button
+            type="button"
+            id="tab-property-management"
+            data-panel="property-management"
+            disabled
+          >
+            Property Management
+          </button>
+        </div>
+        <div
+          class="audience-panel"
+          id="residential"
+          aria-labelledby="tab-residential"
+        >
+          <div class="audience-copy">
+            <h3>Keep your home in shape.</h3>
+            <p>
+              Everyday repairs, lingering projects and seasonal upkeep, with one
+              local point of contact.
+            </p>
+            <ul class="service-highlights">
+              <li>Home repairs & installations</li>
+              <li>Exterior & seasonal care</li>
+              <li>Punch lists & recurring visits</li>
+            </ul>
+            <button
+              class="btn primary"
+              type="button"
+              data-estimate
+              disabled
+              data-property="Residential"
+            >
+              Get a free estimate <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <div class="service-details">
+            <details>
+              <summary>Repairs & project lists</summary>
+              <p>
+                General repairs, fixture replacements, installations and
+                touch-ups. Bundle the loose ends into a single project list.
+              </p>
+            </details>
+            <details>
+              <summary>Exterior & seasonal upkeep</summary>
+              <p>
+                Pressure washing, cleanup, minor exterior repairs and seasonal
+                checkups for your Arizona property.
+              </p>
+            </details>
+            <details>
+              <summary>Recurring home maintenance</summary>
+              <p>
+                Discuss routine property checkups and seasonal tasks on a
+                schedule that fits your home.
+              </p>
+              <a class="detail-link" href="#plans"
+                >How maintenance plans work →</a
+              >
+            </details>
+          </div>
+        </div>
+        <div
+          class="audience-panel"
+          id="commercial"
+          aria-labelledby="tab-commercial"
+        >
+          <div class="audience-copy">
+            <h3>Practical support for your business.</h3>
+            <p>
+              Day-to-day property upkeep and repair lists for local businesses
+              and commercial owners.
+            </p>
+            <ul class="service-highlights">
+              <li>General repairs & punch lists</li>
+              <li>Exterior property upkeep</li>
+              <li>Scheduled recurring maintenance</li>
+            </ul>
+            <button
+              class="btn primary"
+              type="button"
+              data-estimate
+              disabled
+              data-property="Commercial"
+            >
+              Get a free estimate <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <div class="service-details">
+            <details>
+              <summary>Maintenance & repairs</summary>
+              <p>
+                Bring us your repair list, installation needs and ongoing upkeep
+                tasks. We’ll discuss the scope and provide a written estimate.
+              </p>
+            </details>
+            <details>
+              <summary>Scheduling around your property</summary>
+              <p>
+                Discuss access requirements, preferred timing and recurring
+                tasks so the work can fit around your business.
+              </p>
+            </details>
+          </div>
+        </div>
+        <div
+          class="audience-panel"
+          id="property-management"
+          aria-labelledby="tab-property-management"
+        >
+          <div class="audience-copy">
+            <h3>A partner for your property list.</h3>
+            <p>
+              Support for property managers and owners handling turnovers,
+              repair lists and ongoing upkeep.
+            </p>
+            <ul class="service-highlights">
+              <li>Turnover tasks & punch lists</li>
+              <li>Routine property care</li>
+              <li>Written estimates for planned work</li>
+            </ul>
+            <button
+              class="btn primary"
+              type="button"
+              data-estimate
+              disabled
+              data-property="Property management"
+            >
+              Get a free estimate <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <div class="service-details">
+            <details>
+              <summary>Turnovers & punch lists</summary>
+              <p>
+                Share the repairs, touch-ups and installation tasks needed
+                between occupants. We’ll discuss scope, access and scheduling
+                for each property.
+              </p>
+            </details>
+            <details>
+              <summary>Ongoing property support</summary>
+              <p>
+                Plan recurring upkeep and seasonal tasks with a familiar
+                maintenance team. Tell us which properties need attention and
+                how you coordinate access.
+              </p>
+            </details>
+          </div>
         </div>
       </section>
-      <section class="commercial section" id="commercial">
-        <div class="commercial-card">
-          <div class="commercial-copy">
-            <p class="eyebrow">Commercial & property partners</p>
-            <h2>Practical support for <em>your properties.</em></h2>
+      <section class="plans section" id="plans">
+        <div>
+          <p class="eyebrow light">Recurring maintenance</p>
+          <h2>Regular upkeep.<br />A manageable list.</h2>
+          <p>
+            For homes, businesses and managed properties. Agree on the tasks and
+            visit schedule that suit your property.
+          </p>
+          <button
+            class="btn primary"
+            type="button"
+            data-estimate
+            disabled
+            data-recurring
+          >
+            Get a free estimate <span aria-hidden="true">→</span>
+          </button>
+        </div>
+        <div class="plan-detail">
+          <p class="plan-lead">
+            Routine checkups · Seasonal tasks · Repair lists
+          </p>
+          <details>
+            <summary>How a maintenance plan works</summary>
+            <ol>
+              <li>Discuss the property and its recurring needs.</li>
+              <li>Agree on a visit schedule and scope of work.</li>
+              <li>Review seasonal tasks and repairs as needs change.</li>
+            </ol>
             <p>
-              Keep day-to-day upkeep, turnover tasks, and repair lists in one
-              conversation. We work with local businesses, property managers,
-              and owners to discuss the work, access requirements, and a
-              schedule for each property.
+              Ask about a plan for your property; visit frequency and work are
+              discussed before scheduling.
             </p>
-            <a class="btn primary" href="#estimate"
-              >Get a free estimate <span aria-hidden="true">→</span></a
-            >
-          </div>
-          <div class="commercial-list">
-            <p>Support for ongoing needs</p>
-            <div>
-              <span>01</span><strong>Recurring maintenance</strong
-              ><b aria-hidden="true">↗</b>
-            </div>
-            <div>
-              <span>02</span><strong>Turnover & punch lists</strong
-              ><b aria-hidden="true">↗</b>
-            </div>
-            <div>
-              <span>03</span><strong>Property upkeep</strong
-              ><b aria-hidden="true">↗</b>
-            </div>
-            <div>
-              <span>04</span><strong>Written estimates</strong
-              ><b aria-hidden="true">↗</b>
-            </div>
-          </div>
+          </details>
         </div>
       </section>
       <section class="about section" id="about">
-        <div class="about-visual">
-          <div class="local-panel">
-            <span>Our home base</span
-            ><strong>Gold Canyon,<br />Arizona.</strong>
-            <p>Family owned.<br />Focused on property care.</p>
-            <span class="local-panel-rule" aria-hidden="true"></span>
-          </div>
+        <div>
+          <p class="eyebrow">Family owned. Gold Canyon based.</p>
+          <h2>Good work should earn the next call.</h2>
         </div>
         <div class="about-copy">
-          <p class="eyebrow">Family owned. Locally accountable.</p>
-          <h2>Good work should earn the <em>next call.</em></h2>
           <p>
-            Compton Family Maintenance is a family-owned maintenance company
-            based in Gold Canyon, serving homes, businesses, and managed
-            properties in the surrounding East Valley.
-          </p>
-          <p>
-            We believe good service starts with a clear conversation: what needs
-            attention, what the work involves, and how to fit it around your
-            property.
+            Compton Family Maintenance serves homes, businesses and managed
+            properties across Gold Canyon and the surrounding East Valley. We
+            believe good service starts with a clear conversation about the work
+            and your property.
           </p>
           <div class="values">
-            <div>
-              <span>01</span><strong>Clear</strong
-              ><small>Written estimates</small>
-            </div>
-            <div>
-              <span>02</span><strong>Reliable</strong
-              ><small>Communication</small>
-            </div>
-            <div>
-              <span>03</span><strong>Local</strong
-              ><small>East Valley service</small>
-            </div>
+            <span>Written estimates</span><span>Clear communication</span
+            ><span>Local service</span>
           </div>
-        </div>
-      </section>
-      <section class="cta-band">
-        <div class="cta-copy">
-          <span>THE LIST ISN'T GETTING SHORTER.</span>
-          <h2>Let us take something<br /><em>off it.</em></h2>
-        </div>
-        <a class="btn primary" href="#estimate"
-          >Get a free estimate <span aria-hidden="true">→</span></a
-        >
-      </section>
-      <section class="estimate section" id="estimate">
-        <div class="estimate-copy">
-          <p class="eyebrow light">Tell us what you need</p>
-          <h2>Start with the <em>list.</em></h2>
-          <p>
-            A repair, a running list, or regular property care—start by
-            outlining the work and where the property is located.
-          </p>
-          <div class="estimate-meta">
-            <div>
-              <span>Service area</span
-              ><strong
-                >Gold Canyon & surrounding East Valley communities</strong
-              >
-            </div>
-            <div>
-              <span>Property types</span
-              ><strong>Residential · Commercial · Property Management</strong>
-            </div>
-          </div>
-        </div>
-        <form
-          class="estimate-form"
-          id="estimateForm"
-          aria-labelledby="form-title"
-          aria-describedby="formNote"
-        >
-          <div class="form-heading">
-            <span>GET A FREE ESTIMATE</span>
-            <h3 id="form-title">Prepare your project details.</h3>
-          </div>
-          <p class="form-notice" id="formNote">
-            Online requests are not connected yet. This form creates a project
-            summary you can copy; it does not send a request. Please use your
-            existing contact with Compton Family Maintenance to share it.
-          </p>
-          <label for="name"
-            >Name<input
-              id="name"
-              required
-              name="name"
-              autocomplete="name"
-              maxlength="120"
-              placeholder="Your name"
-          /></label>
-          <label for="contact"
-            >Phone or email<input
-              id="contact"
-              required
-              name="contact"
-              maxlength="160"
-              placeholder="How to reach you"
-          /></label>
-          <label for="type"
-            >Property type<select id="type" name="type">
-              <option>Residential</option>
-              <option>Commercial</option>
-              <option>Property management</option>
-            </select></label
-          >
-          <label for="location"
-            >Property location<input
-              id="location"
-              required
-              name="location"
-              autocomplete="address-level2"
-              maxlength="160"
-              placeholder="City or neighborhood"
-          /></label>
-          <label class="full-width" for="project"
-            >What needs attention?<textarea
-              id="project"
-              required
-              name="project"
-              rows="4"
-              maxlength="4000"
-              placeholder="Describe the tasks, timing, and whether you need recurring care."
-            ></textarea>
-          </label>
-          <button class="btn dark full-width" type="submit" disabled>
-            Prepare project summary <span aria-hidden="true">→</span>
+          <button class="btn primary" type="button" data-estimate disabled>
+            Get a free estimate <span aria-hidden="true">→</span>
           </button>
-          <noscript
-            ><p>
-              Enable JavaScript to prepare a summary, or copy your project
-              details manually. This website cannot send requests.
-            </p></noscript
-          >
-          <p class="form-privacy full-width">
-            Your details stay in this browser. Nothing is submitted or saved by
-            this site.
-          </p>
-          <div class="summary-panel full-width" id="summaryPanel" hidden>
-            <label for="projectSummary"
-              >Your project summary<textarea
-                id="projectSummary"
-                rows="8"
-                readonly
-              ></textarea></label
-            ><button class="btn dark" type="button" id="copySummary">
-              Copy summary
-            </button>
-          </div>
-          <p class="form-status full-width" id="formStatus" role="status"></p>
-        </form>
+        </div>
       </section>
     </main>
     <footer>
@@ -463,13 +355,99 @@
         <span class="footer-label">Explore</span><a href="#services">Services</a
         ><a href="#plans">Maintenance Plans</a
         ><a href="#commercial">Commercial</a
-        ><a href="#estimate">Get a free estimate</a>
+        ><button type="button" data-estimate disabled>
+          Get a free estimate
+        </button>
       </div>
       <p class="copyright">
-        © <span id="year">2026</span> Compton Family Maintenance
+        <span>© <span id="year">2026</span> Compton Family Maintenance</span>
         <a href="#top">Back to top ↑</a>
       </p>
     </footer>
+    <dialog
+      class="estimate-dialog"
+      id="estimateDialog"
+      aria-labelledby="estimate-title"
+      aria-describedby="estimate-note"
+    >
+      <div class="dialog-header">
+        <div>
+          <p class="eyebrow">Get a free estimate</p>
+          <h2 id="estimate-title">Start with your list.</h2>
+        </div>
+        <button
+          class="dialog-close"
+          type="button"
+          aria-label="Close estimate"
+          autofocus
+        >
+          ✕
+        </button>
+      </div>
+      <div class="dialog-content">
+        <p class="dialog-area">Gold Canyon & surrounding East Valley</p>
+        <p class="form-notice" id="estimate-note">
+          Online sending isn’t available. Copy a project summary to share
+          through your existing contact with us.
+        </p>
+        <form class="estimate-form" id="estimateForm">
+          <div id="estimateFields">
+            <div class="form-row">
+              <label for="type"
+                >Property type<select id="type" name="type">
+                  <option>Residential</option>
+                  <option>Commercial</option>
+                  <option>Property management</option>
+                </select></label
+              ><label for="location"
+                >City or neighborhood<input
+                  id="location"
+                  name="location"
+                  required
+                  maxlength="160"
+                  autocomplete="address-level2"
+                  placeholder="e.g. Gold Canyon"
+              /></label>
+            </div>
+            <label for="project"
+              >What needs attention?<textarea
+                id="project"
+                name="project"
+                rows="3"
+                required
+                maxlength="4000"
+                placeholder="Tasks, timing and any recurring care."
+              ></textarea></label
+            ><button class="btn primary" type="submit">
+              Prepare summary <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <div id="summaryPanel" hidden>
+            <label for="projectSummary"
+              >Your project summary<textarea
+                id="projectSummary"
+                rows="6"
+                readonly
+              ></textarea>
+            </label>
+            <div class="summary-actions">
+              <button class="btn primary" type="button" id="copySummary">
+                Copy summary</button
+              ><button class="edit-summary" type="button" id="editSummary">
+                Edit details
+              </button>
+            </div>
+          </div>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </dialog>
+    <noscript
+      ><p class="no-script-note">
+        Enable JavaScript to open the estimate tool. Online sending is not
+        available.
+      </p></noscript
+    >
     <script src="script.js"></script>
   </body>
 </html>
